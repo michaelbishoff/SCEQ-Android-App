@@ -2,6 +2,7 @@ package com.example.test;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
 	private RadioButton radioButton;
 	
 	private static final int NUM_QUESTIONS = 2;
+	public static final String EXTRA_SIGNITURE = "com.example.Q";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +41,9 @@ public class MainActivity extends ActionBarActivity {
 	
 	public void clickEvent(View v){
 		// Perform action on click
+		Intent intent = new Intent(getBaseContext(), SecondActivity.class);
+		
 	    // get selected radio button from radioGroup
-		String toastMessage = "";
 		
 		// Adds all of the selected answers to the toast message
 		for (int i = 0; i < radioGroups.length; i++){
@@ -49,24 +52,11 @@ public class MainActivity extends ActionBarActivity {
 
 				radioButton = (RadioButton) findViewById(radioButtonId);
 
-				toastMessage += radioButton.getText() + " ";
+				intent.putExtra(EXTRA_SIGNITURE + (i + 1) , radioButton.getText());
 			}
 		}
 		
-//        int q1Id = radioGroup1.getCheckedRadioButtonId();
-
-        // find the radiobutton by returned id
-//        radioButton = (RadioButton) findViewById(q1Id);
-
-        Toast.makeText(MainActivity.this,
-        		toastMessage, Toast.LENGTH_SHORT).show();
-		
-//		toast = Toast.makeText(context, text, duration);
-		
-//		toast.show();
-		
-		// Send SQL Lite command
-		
+        startActivity(intent);
 	}
 
 	@Override

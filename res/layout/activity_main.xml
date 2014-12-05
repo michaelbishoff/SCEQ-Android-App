@@ -18,13 +18,13 @@
         android:layout_marginBottom="28dp"
         android:layout_marginRight="32dp"
         android:onClick="clickEvent"
-        android:text="Submit" />
+        android:text="@string/next" />
     
     <TextView
         android:id="@+id/q1prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How often is class canceled?" />
+        android:text="@string/questionA1" />
 
     <RadioGroup
         android:id="@+id/q1group"
@@ -38,35 +38,35 @@
             android:id="@+id/q1choice1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1" />
+            android:text="@string/v1" />
 
         <RadioButton
             android:id="@+id/q1choice2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="2" />
+            android:text="@string/v2" />
         
         <RadioButton
             android:id="@+id/q1choice3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="3" />
+            android:text="@string/v3" />
         
         <RadioButton
             android:id="@+id/q1choice4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="4" />
+            android:text="@string/v4" />
         
         <RadioButton
             android:id="@+id/q1choice5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="5" />
+            android:text="@string/v5" />
     </RadioGroup>
     
     
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="What is your favorite color?" />
+        android:text="@string/questionA2" />
 
     <RadioGroup
         android:id="@+id/q2group"
@@ -89,35 +89,35 @@
             android:id="@+id/q2choice1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1" />
+            android:text="@string/v1" />
 
         <RadioButton
             android:id="@+id/q2choice2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="2" />
+            android:text="@string/v2" />
         
         <RadioButton
             android:id="@+id/q2choice3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="3" />
+            android:text="@string/v3" />
         
         <RadioButton
             android:id="@+id/q2choice4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="4" />
+            android:text="@string/v4" />
         
         <RadioButton
             android:id="@+id/q2choice5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="5" />
+            android:text="@string/v5" />
     </RadioGroup>
 
 </RelativeLayout>

@@ -4,5 +4,31 @@
     <string name="app_name">Test</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="questionA1">Did you gain knowledge from this course?</string>
+    <string name="questionA2">
+        Did the instructor make it clear what knowledge you were expected to acquire?
+    </string>
+    <string name="questionA3"></string>
+    <string name="questionA4"></string>
+    <string name="questionA5"></string>
+    <string name="questionA6"></string>
+    <string name="questionA7"></string>
+    <string name="questionA8"></string>
+    <string name="questionA9"></string>
+	<string name="questionB1"></string>
+    <string name="questionB2"></string>
+    <string name="questionB3"></string>
+    <string name="questionB4"></string>
+    <string name="questionB5"></string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    
+    <string name="v1">1</string>
+    <string name="v2">2</string>
+    <string name="v3">3</string>
+    <string name="v4">4</string>
+    <string name="v5">5</string>
+    
 </resources>
