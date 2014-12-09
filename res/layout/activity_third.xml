@@ -9,8 +9,159 @@
     tools:context="com.example.test.ThirdActivity" >
 
     <TextView
+        android:id="@+id/q9prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/questionA9" />
 
-</RelativeLayout>
+    <RadioGroup
+        android:id="@+id/q9group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q9prompt"
+        android:layout_below="@+id/q9prompt"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/q9choice0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notQualified" />
+        
+        <RadioButton
+            android:id="@+id/q9choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/worst" />
+
+        <RadioButton
+            android:id="@+id/q9choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poor" />
+        
+        <RadioButton
+            android:id="@+id/q9choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/average" />
+        
+        <RadioButton
+            android:id="@+id/q9choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/good" />
+        
+        <RadioButton
+            android:id="@+id/q9choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/best" />
+    </RadioGroup>
+    
+    
+	<TextView
+        android:id="@+id/q10prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/questionB1" />
+
+    <RadioGroup
+        android:id="@+id/q10group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q10prompt"
+        android:layout_below="@+id/q10prompt"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/q10choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v1" />
+
+        <RadioButton
+            android:id="@+id/q10choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v2" />
+        
+        <RadioButton
+            android:id="@+id/q10choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v3" />
+        
+        <RadioButton
+            android:id="@+id/q10choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v4" />
+        
+        <RadioButton
+            android:id="@+id/q10choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/v5" />
+    </RadioGroup>
+
+	<TextView
+        android:id="@+id/q11prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="305dp"
+        android:text="@string/questionB2" />
+
+    <RadioGroup
+        android:id="@+id/q11group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q11prompt"
+        android:layout_below="@+id/q11prompt"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/q11choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v1" />
+
+        <RadioButton
+            android:id="@+id/q11choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v2" />
+        
+        <RadioButton
+            android:id="@+id/q11choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v3" />
+        
+        <RadioButton
+            android:id="@+id/q11choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v4" />
+        
+        <RadioButton
+            android:id="@+id/q11choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/v5" />
+    </RadioGroup>
+    
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="clickEvent"
+        android:text="@string/next" /></RelativeLayout>

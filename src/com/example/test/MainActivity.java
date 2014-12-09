@@ -13,29 +13,27 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
-	private static Toast toast;
+	
 	private RadioGroup[] radioGroups;
-	private RadioGroup radioGroup1, radioGroup2, radioGroup3, radioGroup4, radioGroup5;
 	private RadioButton radioButton;
 	
-	private static final int NUM_QUESTIONS = 2;
+	private static final int NUM_QUESTIONS = 5;
 	public static final String EXTRA_SIGNITURE = "com.example.Q";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+	
+//		Toast.makeText(getApplicationContext(), R.id.q1group + " " + R.id.q2group, Toast.LENGTH_SHORT).show();
 		
-    	Context context = getApplicationContext();
-    	CharSequence text = "Hello toast!";
-    	int duration = Toast.LENGTH_SHORT;
-
-    	toast = Toast.makeText(context, text, duration);
-    	
     	radioGroups = new RadioGroup[NUM_QUESTIONS];
     	
     	radioGroups[0] = (RadioGroup) findViewById(R.id.q1group);
     	radioGroups[1] = (RadioGroup) findViewById(R.id.q2group);
+    	radioGroups[2] = (RadioGroup) findViewById(R.id.q3group);
+    	radioGroups[3] = (RadioGroup) findViewById(R.id.q4group);
+    	radioGroups[4] = (RadioGroup) findViewById(R.id.q5group);
 		
 	}
 	

@@ -7,18 +7,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.test.MainActivity" >
-
-    <Button
-        android:id="@+id/button1"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="28dp"
-        android:layout_marginRight="32dp"
-        android:onClick="clickEvent"
-        android:text="@string/next" />
     
     <TextView
         android:id="@+id/q1prompt"
@@ -44,21 +32,18 @@
             android:id="@+id/q1choice2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="@string/v2" />
         
         <RadioButton
             android:id="@+id/q1choice3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="@string/v3" />
         
         <RadioButton
             android:id="@+id/q1choice4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="@string/v4" />
         
         <RadioButton
@@ -74,7 +59,7 @@
         android:id="@+id/q2prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="62dp"
         android:text="@string/questionA2" />
 
     <RadioGroup
@@ -95,21 +80,18 @@
             android:id="@+id/q2choice2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="@string/v2" />
         
         <RadioButton
             android:id="@+id/q2choice3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="@string/v3" />
         
         <RadioButton
             android:id="@+id/q2choice4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="@string/v4" />
         
         <RadioButton
@@ -119,5 +101,174 @@
             android:checked="true"
             android:text="@string/v5" />
     </RadioGroup>
+    
+    <TextView
+        android:id="@+id/q3prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="139dp"
+        android:text="@string/questionA3" />
+
+    <RadioGroup
+        android:id="@+id/q3group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q3prompt"
+        android:layout_below="@+id/q3prompt"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/q3choice0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NA" />
+        
+        <RadioButton
+            android:id="@+id/q3choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v1" />
+
+        <RadioButton
+            android:id="@+id/q3choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v2" />
+        
+        <RadioButton
+            android:id="@+id/q3choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v3" />
+        
+        <RadioButton
+            android:id="@+id/q3choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v4" />
+        
+        <RadioButton
+            android:id="@+id/q3choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/v5" />
+    </RadioGroup>
+    
+	<TextView
+        android:id="@+id/q4prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="@string/questionA4" />
+
+    <RadioGroup
+        android:id="@+id/q4group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q4prompt"
+        android:layout_below="@+id/q4prompt"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/q4choice0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NA" />
+
+        <RadioButton
+            android:id="@+id/q4choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v1" />
+
+        <RadioButton
+            android:id="@+id/q4choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v2" />
+        
+        <RadioButton
+            android:id="@+id/q4choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v3" />
+        
+        <RadioButton
+            android:id="@+id/q4choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v4" />
+        
+        <RadioButton
+            android:id="@+id/q4choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/v5" />
+    </RadioGroup>
+    
+   	<TextView
+        android:id="@+id/q5prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="318dp"
+        android:text="@string/questionA5" />
+
+    <RadioGroup
+        android:id="@+id/q5group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q5prompt"
+        android:layout_below="@+id/q5prompt"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/q5choice0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NA" />
+
+        <RadioButton
+            android:id="@+id/q5choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v1" />
+
+        <RadioButton
+            android:id="@+id/q5choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v2" />
+        
+        <RadioButton
+            android:id="@+id/q5choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v3" />
+        
+        <RadioButton
+            android:id="@+id/q5choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v4" />
+        
+        <RadioButton
+            android:id="@+id/q5choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/v5" />
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="clickEvent"
+        android:text="@string/next" />
 
 </RelativeLayout>

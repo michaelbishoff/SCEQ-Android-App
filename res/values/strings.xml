@@ -6,29 +6,55 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_third">ThirdActivity</string>
     <string name="title_activity_second">SecondActivity</string>
+
+    <!-- General questions about the course -->
     <string name="questionA1">Did you gain knowledge from this course?</string>
-    <string name="questionA2">
-        Did the instructor make it clear what knowledge you were expected to acquire?
-    </string>
-    <string name="questionA3"></string>
-    <string name="questionA4"></string>
-    <string name="questionA5"></string>
-    <string name="questionA6"></string>
-    <string name="questionA7"></string>
-    <string name="questionA8"></string>
-    <string name="questionA9"></string>
-	<string name="questionB1"></string>
-    <string name="questionB2"></string>
-    <string name="questionB3"></string>
-    <string name="questionB4"></string>
-    <string name="questionB5"></string>
+    <string name="questionA2">        Did the instructor make it clear what knowledge you were expected to acquire?</string>
+    <string name="questionA3">        Did the questions ask on exams reflect the knowledge you were expected to acquire?</string>
+    <string name="questionA4">        Did evaluations, other than exams (such as critiques, grading of papers, reports, 
+        or oral presentations) reflect the knowledge you were expected to acquire?</string>
+    <string name="questionA5">        Did assigned readings contribute to what you learned in this course?</string>
+    <string name="questionA6">        Did written assignments, not including exams, contribute to 
+        what you learned in this course?</string>
+    <string name="questionA7">Was the grading system clearly explained?</string>
+    <string name="questionA8">        How many times was class canceled without substitution of some 
+        other learning experience, such as an assignment, film, field trip, or guest lecturer?</string>
+    <string name="questionA9">How would you grade the overall teaching effectiveness 
+        of this instructor?</string>
+
+    <!-- Questions about Lecture -->
+    <string name="questionB1">Were the instructor\'s lectures well prepared?</string>
+    <string name="questionB2">        Did the instructor seem interested in the subject matter of the course?</string>
+    <string name="questionB3">Was lecture material presented and explained clearly?</string>
+    <string name="questionB4">        Did the instructor\'s lectures contribute to what you learned in this course?</string>
+    <string name="questionB5">        Did the instructor\'s use of audiovisual techniques enhance your 
+        understanding of or interest in course material?</string>
+
+    <!-- Button Labels -->
     <string name="next">Next</string>
     <string name="submit">Submit</string>
-    
+
+    <!-- Answer choices -->
+    <string name="NA">N/A</string>
     <string name="v1">1</string>
     <string name="v2">2</string>
     <string name="v3">3</string>
     <string name="v4">4</string>
     <string name="v5">5</string>
-    
+    <string name="didNotAttend">I did not attend class often enough to judge</string>
+    <string name="moreThanSix">> 6</string>
+    <string name="fiveOrSix">5 or 6</string>
+    <string name="threeOrFour">3 or 4</string>
+    <string name="oneOrTwo">1 or 2</string>
+    <string name="never">Never</string>
+    <string name="notQualified">        I did not feel qualified to judge the instructor\'s teaching effectiveness</string>
+    <string name="worst">One of the worst instructors I\'ve had</string>
+    <string name="poor">Definitely poor or inferior</string>
+    <string name="average">Average</string>
+    <string name="good">Definitely good or superior</string>
+    <string name="best">One of the best instructors I\'ve had</string>
+    <string name="title_activity_fourth">FourthActivity</string>
+    <string name="title_activity_done">DoneActivity</string>
+    <string name="thank_you">Thank you for Submitting!</string>
+
 </resources>

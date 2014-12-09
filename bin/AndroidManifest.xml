@@ -30,6 +30,14 @@
             android:name=".ThirdActivity"
             android:label="@string/title_activity_third" >
         </activity>
+        <activity
+            android:name=".FourthActivity"
+            android:label="@string/title_activity_fourth" >
+        </activity>
+        <activity
+            android:name=".DoneActivity"
+            android:label="@string/title_activity_done" >
+        </activity>
     </application>
 
 </manifest>

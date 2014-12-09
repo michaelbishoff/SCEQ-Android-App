@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 // http://userpages.umbc.edu/~akendir1/CMSC331/Project2/data.php
-public class SecondActivity extends ActionBarActivity {
+public class FourthActivity extends ActionBarActivity {
 	
 	private RadioGroup[] radioGroups;
 	private RadioButton radioButton;
@@ -21,9 +21,9 @@ public class SecondActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_second);
+		setContentView(R.layout.activity_fourth);
 		
-		String q1 = "Second Activity: ";
+		String q1 = "Fourth Activity: ";
 		
 		if (savedInstanceState == null) {
 			
@@ -41,19 +41,19 @@ public class SecondActivity extends ActionBarActivity {
 		    q1 += (String) savedInstanceState.getSerializable(EXTRA_SIGNITURE + "2");
 		}
 		
-		Toast.makeText(SecondActivity.this,
+		Toast.makeText(FourthActivity.this,
         		q1, Toast.LENGTH_SHORT).show();
 		
 		radioGroups = new RadioGroup[NUM_QUESTIONS];
 		
-		radioGroups[0] = (RadioGroup) findViewById(R.id.q6group);
-    	radioGroups[1] = (RadioGroup) findViewById(R.id.q7group);
-    	radioGroups[2] = (RadioGroup) findViewById(R.id.q8group);
+		radioGroups[0] = (RadioGroup) findViewById(R.id.q12group);
+    	radioGroups[1] = (RadioGroup) findViewById(R.id.q13group);
+    	radioGroups[2] = (RadioGroup) findViewById(R.id.q14group);
 	}
 	
 	// Perform action on click
 	public void clickEvent(View v){
-        Intent intent = new Intent(getBaseContext(), ThirdActivity.class);
+        Intent intent = new Intent(getBaseContext(), DoneActivity.class);
         
         // Adds all of the extras from this intent to the next intent
         Bundle extras = getIntent().getExtras();
@@ -69,7 +69,7 @@ public class SecondActivity extends ActionBarActivity {
 				
 				radioButton = (RadioButton) findViewById(radioButtonId);
 
-				intent.putExtra(EXTRA_SIGNITURE + (i + 6) , radioButton.getText());
+				intent.putExtra(EXTRA_SIGNITURE + (i + 12) , radioButton.getText());
 			}
 		}
         
