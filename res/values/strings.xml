@@ -56,5 +56,16 @@
     <string name="title_activity_fourth">FourthActivity</string>
     <string name="title_activity_done">DoneActivity</string>
     <string name="thank_you">Thank you for Submitting!</string>
-
+    <string name="title_activity_first">FirstActivity</string>
+    
+    <string name="catalogNumber">Enter Course Catalog Number</string>
+	<string name="majorCodePrompt">Enter Your Major Code (See Code List)</string>
+	<string name="numCreditsPrompt">Enter Your Total Number of Credits Earned\n(999 if you don\'t recall)</string>
+	<string name="professorPrompt">Enter Your Professor\'s LAST Name</string>
+	
+	<string name="requiredCourse">Required for major or program</string>
+	<string name="generalCourse">General distribution requirement</string>
+	<string name="electiveCourse">Elective</string>
+	<string name="otherCourse">Other</string>
+	
 </resources>

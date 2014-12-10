@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.test.FirstActivity" >
+
+    <TextView
+        android:id="@+id/catalogNumberPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/catalogNumber" />
+
+    <EditText
+        android:id="@+id/catalogNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catalogNumberPrompt"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:maxLength="4"
+        android:text=""
+        android:inputType="number" >
+        
+        <requestFocus />
+    </EditText>
+    
+   	<TextView
+        android:id="@+id/professorPromptView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/professorPrompt" />
+
+    <EditText
+        android:id="@+id/professor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/professorPromptView"
+        android:ems="10"
+        android:maxLength="20"
+        android:text=""
+        android:inputType="text" >
+    
+    </EditText>
+    
+    <TextView
+        android:id="@+id/majorCodeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="@string/majorCodePrompt" />
+
+    <EditText
+        android:id="@+id/majorCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/majorCodeView"
+        android:ems="10"
+        android:maxLength="2"
+        android:inputType="number" >
+        
+    </EditText>
+    
+    <TextView
+        android:id="@+id/creditsPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:text="@string/numCreditsPrompt" />
+
+    <EditText
+        android:id="@+id/numCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creditsPrompt"
+        android:ems="10"
+        android:maxLength="3"
+        android:inputType="number" >
+        
+    </EditText>
+    
+	<TextView
+        android:id="@+id/reasonPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:text="@string/questionA5" />
+
+    <RadioGroup
+        android:id="@+id/reasonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reasonPrompt"
+        android:layout_below="@+id/reasonPrompt"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/reasonChoice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/requiredCourse" />
+
+        <RadioButton
+            android:id="@+id/reasonChoice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generalCourse" />
+
+        <RadioButton
+            android:id="@+id/reasonChoice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electiveCourse" />
+        
+        <RadioButton
+            android:id="@+id/reasonChoice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otherCourse" />
+        
+    </RadioGroup>
+    
+   	<Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="clickEvent"
+        android:text="@string/next" />
+    
+</RelativeLayout>

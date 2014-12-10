@@ -24,6 +24,28 @@ public class MainActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		String q1 = "Main Activity: ";
+		
+		if (savedInstanceState == null) {
+			
+		    Bundle extras = getIntent().getExtras();
+		    
+		    if(extras == null) {
+		        q1 = null;
+		    } else {
+		    	// Goes in here because savedInstanceState is always null. Could change that
+		    	for (String key : extras.keySet()){
+		    		q1 += extras.getString(key) + " ";
+		    	}
+		    }
+		} else {
+		    q1 += (String) savedInstanceState.getSerializable(EXTRA_SIGNITURE + "2");
+		}
+		
+		Toast.makeText(MainActivity.this,
+        		q1, Toast.LENGTH_SHORT).show();
+		
 	
 //		Toast.makeText(getApplicationContext(), R.id.q1group + " " + R.id.q2group, Toast.LENGTH_SHORT).show();
 		
@@ -40,6 +62,12 @@ public class MainActivity extends ActionBarActivity {
 	public void clickEvent(View v){
 		// Perform action on click
 		Intent intent = new Intent(getBaseContext(), SecondActivity.class);
+		
+		// Adds all of the extras from this intent to the next intent
+        Bundle extras = getIntent().getExtras();
+        for (String key : extras.keySet()){
+        	intent.putExtra(key, extras.getString(key));
+        }
 		
 	    // get selected radio button from radioGroup
 		
